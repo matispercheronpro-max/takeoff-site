@@ -257,7 +257,8 @@ img{display:block;max-width:100%}
 .ticket{flex-direction:row}
 article[id^="dish-"]{transition:transform .18s, box-shadow .18s}
 article[id^="dish-"]:hover{transform:translateY(-5px);box-shadow:0 20px 44px rgba(27,42,99,.16)}
-.hero-mascot{width:min(360px,80vw)}
+.hero-mascot{width:min(360px,80vw);height:auto;object-fit:contain;align-self:center;flex:0 0 auto;position:relative;z-index:1}
+.mascot-halo{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:min(440px,82vw);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(228,238,255,.28) 0%,rgba(150,180,255,.10) 45%,transparent 68%);pointer-events:none;z-index:0}
 body.no-scroll{overflow:hidden}
 .nav-backdrop{position:fixed;inset:0;background:rgba(18,24,58,.5);opacity:0;visibility:hidden;transition:opacity .28s;z-index:290}
 .nav-backdrop.open{opacity:1;visibility:visible}
@@ -275,9 +276,9 @@ body.no-scroll{overflow:hidden}
   .ticket-seam{display:none!important}
   .bp-barcode{display:none!important}
   .bp-stub{display:none!important}
-  .hero-mascot{width:min(150px,42vw)!important}
-  .hero-inner{flex-direction:column-reverse!important;flex-wrap:nowrap!important;align-items:stretch!important}
-  .hero-inner>div{width:100%!important}
+  .hero-mascot{width:min(180px,48vw)!important}
+  .hero-inner{flex-direction:column-reverse!important;flex-wrap:nowrap!important;align-items:stretch!important;padding:8px 20px 24px!important;gap:8px!important}
+  .hero-inner>div{width:100%!important;flex:0 0 auto!important}
 }
 </style>
 </head>
@@ -383,7 +384,8 @@ body.no-scroll{overflow:hidden}
       </div>
     </div>
 
-    <div style="flex:1 1 300px;min-width:240px;display:flex;justify-content:center">
+    <div style="flex:1 1 300px;min-width:240px;display:flex;justify-content:center;position:relative">
+      <div class="mascot-halo"></div>
       <img src="images/aa4ae8ca-6cec-4730-a09b-026724be5797.webp" alt="Mascotte TAKE OFF : éléphant aviateur qui salue" class="hero-mascot" style="height:auto;filter:drop-shadow(0 26px 40px rgba(0,0,0,.45));animation:bob 5s ease-in-out infinite">
     </div>
   </div>
