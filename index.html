@@ -276,6 +276,8 @@ body.no-scroll{overflow:hidden}
   .bp-barcode{display:none!important}
   .bp-stub{display:none!important}
   .hero-mascot{width:min(150px,42vw)!important}
+  .hero-inner{flex-direction:column-reverse!important;flex-wrap:nowrap!important;align-items:stretch!important}
+  .hero-inner>div{width:100%!important}
 }
 </style>
 </head>
@@ -343,7 +345,7 @@ body.no-scroll{overflow:hidden}
 
 <section id="hero" style="background:radial-gradient(120% 80% at 80% 0%,#26397f 0%,#1B2A63 42%,#12183a 100%);color:#fff;position:relative;overflow:hidden">
   <div style="position:absolute;inset:0;opacity:.5;background:radial-gradient(closest-side at 15% 30%,rgba(255,255,255,.10),transparent 70%),radial-gradient(closest-side at 88% 65%,rgba(244,180,0,.10),transparent 70%);pointer-events:none"></div>
-  <div style="max-width:1180px;margin:0 auto;padding:clamp(40px,7vw,84px) 20px clamp(48px,7vw,88px);display:flex;flex-wrap:wrap-reverse;align-items:center;gap:clamp(24px,5vw,56px);position:relative">
+  <div class="hero-inner" style="max-width:1180px;margin:0 auto;padding:clamp(40px,7vw,84px) 20px clamp(48px,7vw,88px);display:flex;flex-wrap:wrap-reverse;align-items:center;gap:clamp(24px,5vw,56px);position:relative">
     <div style="flex:1 1 420px;min-width:280px">
       <h1 style="font-family:'Baloo 2',cursive;font-weight:800;font-size:clamp(2.6rem,7vw,5rem);line-height:.98;margin:0 0 18px;letter-spacing:-.01em">Réservez votre<br><span style="color:#F4B400">voyage gourmand</span></h1>
       <p style="font-size:clamp(1.15rem,2.4vw,1.5rem);font-weight:700;margin:0 0 8px;font-family:'Baloo 2',cursive">La first class au prix low cost.</p>
