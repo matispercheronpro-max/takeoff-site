@@ -280,6 +280,12 @@ body.no-scroll{overflow:hidden}
   .hero-inner{flex-direction:column-reverse!important;flex-wrap:nowrap!important;align-items:stretch!important;padding:8px 20px 24px!important;gap:8px!important}
   .hero-inner>div{width:100%!important;flex:0 0 auto!important}
 }
+.men-cat{display:flex;align-items:baseline;flex-wrap:wrap;gap:8px;margin-bottom:9px}
+.men-cat b{font-weight:800;font-size:.82rem;letter-spacing:.07em;color:#1B2A63}
+.men-cat .pr{background:#F4B400;color:#1B2A63;font-weight:800;font-size:.7rem;padding:3px 9px;border-radius:20px;white-space:nowrap}
+.men-cat .prx{font-size:.68rem;color:rgba(27,42,99,.55);font-weight:600}
+.men-chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px}
+.men-chips span{background:rgba(27,42,99,.06);color:#1B2A63;font-size:.85rem;font-weight:600;padding:5px 11px;border-radius:8px}
 </style>
 </head>
 <body>
@@ -301,7 +307,7 @@ body.no-scroll{overflow:hidden}
       <span style="font-family:'Baloo 2',cursive;font-weight:800;font-size:1.5rem;letter-spacing:.01em;color:#1B2A63;line-height:1">TAKE OFF</span>
     </a>
     <nav class="desk-nav" style="align-items:center;gap:6px;margin-left:auto">
-      <a href="#hero" style="text-decoration:none;color:#1B2A63;font-weight:600;font-size:.94rem;padding:8px 12px;border-radius:9px">Embarquement</a>
+      <a href="#concept" style="text-decoration:none;color:#1B2A63;font-weight:600;font-size:.94rem;padding:8px 12px;border-radius:9px">Le concept</a>
       <span style="color:#F4B400;font-size:.7rem">✈</span>
       <a href="#carte" style="text-decoration:none;color:#1B2A63;font-weight:600;font-size:.94rem;padding:8px 12px;border-radius:9px">La Carte</a>
       <span style="color:#F4B400;font-size:.7rem">✈</span>
@@ -330,7 +336,7 @@ body.no-scroll{overflow:hidden}
     <button onclick="closeNav()" aria-label="Fermer le menu" style="background:none;border:none;font-size:2rem;line-height:1;color:#1B2A63;cursor:pointer;padding:2px 8px">&times;</button>
   </div>
   <nav style="display:flex;flex-direction:column">
-    <a onclick="closeNav()" href="#hero" style="text-decoration:none;color:#1B2A63;font-weight:700;font-size:1.05rem;padding:15px 2px;border-bottom:1px solid rgba(27,42,99,.1)">Embarquement</a>
+    <a onclick="closeNav()" href="#concept" style="text-decoration:none;color:#1B2A63;font-weight:700;font-size:1.05rem;padding:15px 2px;border-bottom:1px solid rgba(27,42,99,.1)">Le concept</a>
     <a onclick="closeNav()" href="#carte" style="text-decoration:none;color:#1B2A63;font-weight:700;font-size:1.05rem;padding:15px 2px;border-bottom:1px solid rgba(27,42,99,.1)">La Carte</a>
     <a onclick="closeNav()" href="#abord" style="text-decoration:none;color:#1B2A63;font-weight:700;font-size:1.05rem;padding:15px 2px;border-bottom:1px solid rgba(27,42,99,.1)">Galerie</a>
     <a onclick="closeNav()" href="#avis" style="text-decoration:none;color:#1B2A63;font-weight:700;font-size:1.05rem;padding:15px 2px;border-bottom:1px solid rgba(27,42,99,.1)">Avis</a>
@@ -510,17 +516,15 @@ body.no-scroll{overflow:hidden}
 
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;margin-top:34px">
       <div style="background:#fff;border-radius:18px;border:1px solid rgba(27,42,99,.09);padding:22px 24px">
-        <h3 style="font-family:'Baloo 2',cursive;font-weight:800;font-size:1.15rem;letter-spacing:.02em;margin:0 0 14px;color:#1B2A63">SUPPLÉMENTS</h3>
-        <div style="font-size:.9rem;line-height:1.9">
-          <p style="margin:0 0 4px;font-weight:700;color:#F4B400;letter-spacing:.06em;font-size:.72rem">VIANDES · 2,00€</p>
-          <p style="margin:0 0 14px;color:rgba(27,42,99,.75)">Steak haché · Kebab · Escalope · Nuggets · Tenders · Cordon bleu · Bacon · Lardons</p>
-          <p style="margin:0 0 4px;font-weight:700;color:#F4B400;letter-spacing:.06em;font-size:.72rem">SAUCES · 0,50€ <span style="color:rgba(27,42,99,.55)">(Take-off 0,70€)</span></p>
-          <p style="margin:0 0 14px;color:rgba(27,42,99,.75)">Blanche · Mayonnaise · Ketchup · Samouraï · Algérienne · Chili Thaï · Biggy · Curry · BBQ · Take-off</p>
-          <p style="margin:0 0 4px;font-weight:700;color:#F4B400;letter-spacing:.06em;font-size:.72rem">FROMAGES · 1,00€</p>
-          <p style="margin:0 0 14px;color:rgba(27,42,99,.75)">Cheddar · Mozzarella · Emmental · Raclette · Chèvre · Feta</p>
-          <p style="margin:0 0 4px;font-weight:700;color:#F4B400;letter-spacing:.06em;font-size:.72rem">AUTRES</p>
-          <p style="margin:0;color:rgba(27,42,99,.75)">Saumon 2,00€ · Salade / Tomates / Oignons 0,50€</p>
-        </div>
+        <h3 style="font-family:'Baloo 2',cursive;font-weight:800;font-size:1.15rem;letter-spacing:.02em;margin:0 0 16px;color:#1B2A63">SUPPLÉMENTS</h3>
+        <div class="men-cat"><b>VIANDES</b><span class="pr">2,00€</span></div>
+        <div class="men-chips"><span>Steak haché</span><span>Kebab</span><span>Escalope</span><span>Nuggets</span><span>Tenders</span><span>Cordon bleu</span><span>Bacon</span><span>Lardons</span></div>
+        <div class="men-cat"><b>SAUCES</b><span class="pr">0,50€</span><span class="prx">Take-off 0,70€</span></div>
+        <div class="men-chips"><span>Blanche</span><span>Mayonnaise</span><span>Ketchup</span><span>Samouraï</span><span>Algérienne</span><span>Chili Thaï</span><span>Biggy</span><span>Curry</span><span>BBQ</span><span>Take-off</span></div>
+        <div class="men-cat"><b>FROMAGES</b><span class="pr">1,00€</span></div>
+        <div class="men-chips"><span>Cheddar</span><span>Mozzarella</span><span>Emmental</span><span>Raclette</span><span>Chèvre</span><span>Feta</span></div>
+        <div class="men-cat"><b>AUTRES</b></div>
+        <div class="men-chips" style="margin-bottom:0"><span>Saumon · 2,00€</span><span>Salade · 0,50€</span><span>Tomates · 0,50€</span><span>Oignons · 0,50€</span></div>
       </div>
       <div style="display:flex;flex-direction:column;gap:22px">
         <div style="background:#fff;border-radius:18px;border:1px solid rgba(27,42,99,.09);padding:22px 24px">
@@ -532,10 +536,10 @@ body.no-scroll{overflow:hidden}
           </div>
         </div>
         <div style="background:#fff;border-radius:18px;border:1px solid rgba(27,42,99,.09);padding:22px 24px">
-          <h3 style="font-family:'Baloo 2',cursive;font-weight:800;font-size:1.15rem;margin:0 0 12px">BOISSONS</h3>
-          <p style="margin:0 0 4px;font-weight:700;color:#F4B400;letter-spacing:.06em;font-size:.72rem">CANETTES 33CL · 1,50€</p>
-          <p style="margin:0 0 12px;color:rgba(27,42,99,.75);font-size:.9rem;line-height:1.7">Coca · Coca Cherry · Coca Zero · Orangina · Oasis Tropical · Ice Tea · Oasis Fraise-Framboise · Fanta Orange · Fanta Citron</p>
-          <p style="margin:0;font-weight:600;font-size:.95rem">Eau 50cl · <span style="color:rgba(27,42,99,.7)">1,00€</span></p>
+          <h3 style="font-family:'Baloo 2',cursive;font-weight:800;font-size:1.15rem;margin:0 0 16px">BOISSONS</h3>
+          <div class="men-cat"><b>CANETTES 33CL</b><span class="pr">1,50€</span></div>
+          <div class="men-chips" style="margin-bottom:14px"><span>Coca</span><span>Coca Cherry</span><span>Coca Zero</span><span>Orangina</span><span>Oasis Tropical</span><span>Ice Tea</span><span>Oasis Fraise-Framboise</span><span>Fanta Orange</span><span>Fanta Citron</span></div>
+          <div style="display:flex;justify-content:space-between;font-weight:600;font-size:.95rem;border-top:1px dashed rgba(27,42,99,.15);padding-top:12px"><span>Eau 50cl</span><span style="color:rgba(27,42,99,.7)">1,00€</span></div>
         </div>
       </div>
     </div>
