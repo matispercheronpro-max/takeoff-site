@@ -233,6 +233,7 @@ body{margin:0;font-family:'Karla',system-ui,-apple-system,sans-serif;color:#1B2A
 img{display:block;max-width:100%}
 @keyframes halo{0%{box-shadow:0 0 0 0 rgba(244,180,0,0),0 10px 30px rgba(27,42,99,.10)}18%{box-shadow:0 0 0 5px rgba(244,180,0,.95),0 22px 46px rgba(244,180,0,.4)}100%{box-shadow:0 0 0 0 rgba(244,180,0,0),0 10px 30px rgba(27,42,99,.10)}}
 @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes halo-pulse{0%,100%{transform:translate(-50%,-50%) scale(1);opacity:.85}50%{transform:translate(-50%,-50%) scale(1.09);opacity:1}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
 </style>
 <script type="application/ld+json">
@@ -258,7 +259,7 @@ img{display:block;max-width:100%}
 article[id^="dish-"]{transition:transform .18s, box-shadow .18s}
 article[id^="dish-"]:hover{transform:translateY(-5px);box-shadow:0 20px 44px rgba(27,42,99,.16)}
 .hero-mascot{width:min(360px,80vw);height:auto;object-fit:contain;align-self:center;flex:0 0 auto;position:relative;z-index:1}
-.mascot-halo{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:min(440px,82vw);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(228,238,255,.28) 0%,rgba(150,180,255,.10) 45%,transparent 68%);pointer-events:none;z-index:0}
+.mascot-halo{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:min(440px,82vw);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(228,238,255,.28) 0%,rgba(150,180,255,.10) 45%,transparent 68%);pointer-events:none;z-index:0;animation:halo-pulse 3.2s ease-in-out infinite}
 body.no-scroll{overflow:hidden}
 .nav-backdrop{position:fixed;inset:0;background:rgba(18,24,58,.5);opacity:0;visibility:hidden;transition:opacity .28s;z-index:290}
 .nav-backdrop.open{opacity:1;visibility:visible}
@@ -355,7 +356,8 @@ body.no-scroll{overflow:hidden}
   <div style="position:absolute;inset:0;opacity:.5;background:radial-gradient(closest-side at 15% 30%,rgba(255,255,255,.10),transparent 70%),radial-gradient(closest-side at 88% 65%,rgba(244,180,0,.10),transparent 70%);pointer-events:none"></div>
   <div class="hero-inner" style="max-width:1180px;margin:0 auto;padding:clamp(40px,7vw,84px) 20px clamp(48px,7vw,88px);display:flex;flex-wrap:wrap-reverse;align-items:center;gap:clamp(24px,5vw,56px);position:relative">
     <div style="flex:1 1 420px;min-width:280px">
-      <h1 style="font-family:'Baloo 2',cursive;font-weight:800;font-size:clamp(2.6rem,7vw,5rem);line-height:.98;margin:0 0 18px;letter-spacing:-.01em">Réservez votre<br><span style="color:#F4B400">voyage gourmand</span></h1>
+      <p style="color:#F4B400;font-weight:700;letter-spacing:.16em;font-size:.78rem;margin:0 0 12px">✈ FAST-FOOD HALAL · GRENOBLE</p>
+      <h1 style="font-family:'Baloo 2',cursive;font-weight:800;font-size:clamp(2.6rem,7vw,5rem);line-height:.98;margin:0 0 18px;letter-spacing:-.01em">Décollage pour<br>votre <span style="color:#F4B400">voyage gourmand</span></h1>
       <p style="font-size:clamp(1.15rem,2.4vw,1.5rem);font-weight:700;margin:0 0 8px;font-family:'Baloo 2',cursive">La first class au prix low cost.</p>
       <p style="font-size:1.02rem;color:rgba(255,255,255,.8);margin:0 0 26px;max-width:34ch">Embarquement immédiat pour un voyage gourmand — tous nos plats faits avec de la pâte à pizza maison. 100% halal.</p>
 
