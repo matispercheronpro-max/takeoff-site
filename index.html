@@ -302,12 +302,13 @@ body.no-scroll{overflow:hidden}
 
 <header style="position:sticky;top:0;z-index:100;background:rgba(251,250,247,.94);backdrop-filter:blur(10px);box-shadow:0 1px 0 rgba(27,42,99,.08)" id="siteHeader">
   <div style="max-width:1180px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;gap:18px">
-    <a href="#hero" style="display:flex;align-items:center;gap:11px;text-decoration:none;flex:0 0 auto">
-      <img src="images/029b0c7a-f008-4476-973c-9b687254e530.webp" alt="Emblème TAKE OFF, aile et globe" style="width:44px;height:44px;object-fit:contain">
-      <span style="font-family:'Baloo 2',cursive;font-weight:800;font-size:1.5rem;letter-spacing:.01em;color:#1B2A63;line-height:1">TAKE OFF</span>
+    <a href="#hero" style="display:flex;align-items:center;text-decoration:none;flex:0 0 auto">
+      <img src="images/logo-take-off.webp" alt="Logo TAKE OFF" style="height:40px;width:auto;object-fit:contain">
     </a>
     <nav class="desk-nav" style="align-items:center;gap:6px;margin-left:auto">
       <a href="#concept" style="text-decoration:none;color:#1B2A63;font-weight:600;font-size:.94rem;padding:8px 12px;border-radius:9px">Le concept</a>
+      <span style="color:#F4B400;font-size:.7rem">✈</span>
+      <a href="#histoire" style="text-decoration:none;color:#1B2A63;font-weight:600;font-size:.94rem;padding:8px 12px;border-radius:9px">Histoire</a>
       <span style="color:#F4B400;font-size:.7rem">✈</span>
       <a href="#carte" style="text-decoration:none;color:#1B2A63;font-weight:600;font-size:.94rem;padding:8px 12px;border-radius:9px">La Carte</a>
       <span style="color:#F4B400;font-size:.7rem">✈</span>
@@ -329,14 +330,14 @@ body.no-scroll{overflow:hidden}
 <div id="navBackdrop" class="nav-backdrop" onclick="closeNav()"></div>
 <aside id="navDrawer" class="nav-drawer" aria-hidden="true" aria-label="Menu">
   <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
-    <span style="display:flex;align-items:center;gap:10px">
-      <img src="images/029b0c7a-f008-4476-973c-9b687254e530.webp" alt="" style="width:34px;height:34px;object-fit:contain">
-      <span style="font-family:'Baloo 2',cursive;font-weight:800;font-size:1.25rem;color:#1B2A63">TAKE OFF</span>
+    <span style="display:flex;align-items:center">
+      <img src="images/logo-take-off.webp" alt="Logo TAKE OFF" style="height:32px;width:auto;object-fit:contain">
     </span>
     <button onclick="closeNav()" aria-label="Fermer le menu" style="background:none;border:none;font-size:2rem;line-height:1;color:#1B2A63;cursor:pointer;padding:2px 8px">&times;</button>
   </div>
   <nav style="display:flex;flex-direction:column">
     <a onclick="closeNav()" href="#concept" style="text-decoration:none;color:#1B2A63;font-weight:700;font-size:1.05rem;padding:15px 2px;border-bottom:1px solid rgba(27,42,99,.1)">Le concept</a>
+    <a onclick="closeNav()" href="#histoire" style="text-decoration:none;color:#1B2A63;font-weight:700;font-size:1.05rem;padding:15px 2px;border-bottom:1px solid rgba(27,42,99,.1)">Histoire</a>
     <a onclick="closeNav()" href="#carte" style="text-decoration:none;color:#1B2A63;font-weight:700;font-size:1.05rem;padding:15px 2px;border-bottom:1px solid rgba(27,42,99,.1)">La Carte</a>
     <a onclick="closeNav()" href="#abord" style="text-decoration:none;color:#1B2A63;font-weight:700;font-size:1.05rem;padding:15px 2px;border-bottom:1px solid rgba(27,42,99,.1)">Galerie</a>
     <a onclick="closeNav()" href="#avis" style="text-decoration:none;color:#1B2A63;font-weight:700;font-size:1.05rem;padding:15px 2px;border-bottom:1px solid rgba(27,42,99,.1)">Avis</a>
@@ -427,6 +428,16 @@ body.no-scroll{overflow:hidden}
       </div>
 
     </div>
+  </div>
+</section>
+
+<section id="histoire" style="background:#FBFAF7;padding:clamp(50px,7vw,90px) 20px">
+  <div style="max-width:720px;margin:0 auto;text-align:center">
+    <p style="color:#F4B400;font-weight:700;letter-spacing:.16em;font-size:.78rem;margin:0 0 8px">✈ NOTRE HISTOIRE</p>
+    <h2 style="font-family:'Baloo 2',cursive;font-weight:800;font-size:clamp(1.9rem,4.5vw,3rem);margin:0 0 24px;line-height:1.05;color:#1B2A63">Tout a commencé derrière un four à pizza</h2>
+    <p style="color:rgba(27,42,99,.8);font-size:1.05rem;line-height:1.75;margin:0 0 18px">Pizzaïolo de métier, je passais mes pauses à explorer les limites de la pâte à pizza : la plier, la garnir, la réinventer. De ces essais est née une évidence. Et si la pâte à pizza maison remplaçait le pain, le bun, le naan ?</p>
+    <p style="color:rgba(27,42,99,.8);font-size:1.05rem;line-height:1.75;margin:0 0 24px">J'ai voulu créer un concept qui me ressemble : un produit de qualité, une vraie identité, et l'envie de faire voyager. Le nom Take Off évoque le décollage, le thème l'avion. À chaque plat sa destination, pour faire découvrir les saveurs du monde sans quitter Grenoble.</p>
+    <p style="color:#1B2A63;font-family:'Baloo 2',cursive;font-weight:700;font-size:1.2rem;margin:0">« Ici, on vient autant pour le goût que pour l'expérience. »</p>
   </div>
 </section>
 
@@ -611,8 +622,7 @@ body.no-scroll{overflow:hidden}
   <div style="max-width:1180px;margin:0 auto;display:flex;flex-wrap:wrap;gap:30px;align-items:flex-start">
     <div style="flex:1 1 260px;min-width:220px">
       <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px">
-        <div style="width:54px;height:54px;background:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;flex:0 0 auto"><img src="images/029b0c7a-f008-4476-973c-9b687254e530.webp" alt="Emblème TAKE OFF" style="width:50px;height:50px;object-fit:contain"></div>
-        <span style="font-family:'Baloo 2',cursive;font-weight:800;font-size:1.6rem">TAKE OFF</span>
+        <img src="images/logo-take-off.webp" alt="Logo TAKE OFF" style="height:46px;width:auto;object-fit:contain">
       </div>
       <p style="color:#F4B400;font-family:'Baloo 2',cursive;font-weight:700;font-size:1.05rem;margin:0 0 6px;line-height:1.25">Embarquement immédiat pour un voyage gourmand ✈</p>
       <p style="color:rgba(255,255,255,.6);font-size:.9rem;margin:0">La first class au prix low cost. 100% halal.</p>
